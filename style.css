@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    font-family: monospace;
+    padding-top:50px;
+}
+
+
+
+body {
+    border-radius: 20px;
+    padding: 40px;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+
+}
+
+
+body{
+  background: url("images/d.png") no-repeat center center fixed; 
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+  font-family:monospace ;
+}
+
+
+
+
+#clock {
+    height:70px;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+
+h2 {
+	text-align:center;
+}
+
+#alarm-container {
+	text-align:center;
+      color: black;
+}
+
+label {
+	display:inline-block;
+}
+
+.timeofday {
+    background-color: #eee;
+}
+
+.bigger {
+    font-weight:bold;
+    font-size: 18px;
+}
+
+#sounds {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#setButton {
+    float:left;
+    background-color:lightgreen;
+    margin-top:10px;
+}
+#clearButton {
+    float:right;
+    background-color:red;
+    margin-top:10px;
+}
+#buttonHolder{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 580px){
+body{
+  background: url("images/m.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+
+
+.white{
+
+    background-color: rgba(250, 250,250, .7) ;
+    padding: 100px;
+    justify-content: center;
+}
