@@ -4,18 +4,6 @@
 
 html {
     font-family: monospace;
-    padding-top:50px;
-}
-
-
-
-body {
-    border-radius: 20px;
-    padding: 40px;
-    width: 60%;
-    height: 400px;
-    margin: 0 auto;
-
 }
 
 
@@ -27,6 +15,9 @@ body{
   -o-background-size: cover;
   background-size: cover;;
   font-family:monospace ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -42,18 +33,21 @@ body{
     color:black;
 }
 
-h2 {
-	text-align:center;
+
+#alarm-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#alarm-container {
+#selection {
+    padding-left: 10px;
 	text-align:center;
       color: black;
+      display: flex;
+
 }
 
-label {
-	display:inline-block;
-}
 
 .timeofday {
     background-color: #eee;
@@ -79,10 +73,7 @@ label {
     background-color:red;
     margin-top:10px;
 }
-#buttonHolder{
-    display: flex;
-    justify-content: space-around;
-}
+
 
 button{
     padding: 10px;
@@ -90,6 +81,27 @@ button{
     border-radius: 5px;
 }
 
+
+
+.white{
+    min-width: 200px;
+    max-width: 400px;
+    background-color: rgba(250, 250,250, .7) ;
+    padding: 60px;
+    justify-content: center;
+}
+
+.center-selection{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time{
+    display: flex;
+}
 
 @media screen and (max-width: 580px){
 body{
@@ -99,12 +111,4 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
-}
-
-
-.white{
-
-    background-color: rgba(250, 250,250, .7) ;
-    padding: 100px;
-    justify-content: center;
 }
