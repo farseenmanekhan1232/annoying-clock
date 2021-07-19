@@ -5,7 +5,6 @@ var sound = new Audio("Angry scream - Sound Effect 2019.weba");
 
 var h2 = document.getElementById('clock');
 
-// display current time by the second
 var currentTime = setInterval(function(){
 	var date = new Date();
 	
